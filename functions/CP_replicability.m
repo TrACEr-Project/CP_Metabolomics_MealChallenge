@@ -40,16 +40,17 @@ for r = 1:repeats
     allscores = [allscores;fms{r}];
     clear index Fac XX
 end
+eval(strcat('save allscores', num2str(R),'.mat'))
 
 
 
 function [Fac_cp, flag_stop] = fitmodel(Y, R, options)
 
-if R==2
-    nb_starts = 20;
-elseif R>2
+if R>2
     nb_starts = 50;
-end    	
+else
+    nb_starts = 20;
+end
 
 W  = tensor(~isnan(Y.data));
 XX = tensor(Y.data);
