@@ -77,6 +77,13 @@ if out{index(1)}.ExitFlag==3 || out{index(1)}.ExitFlag==0 % algorithm stops due 
 else 
     flag_stop = 0;
 end
+%% Replicability for different number of components
+R = 4;
+for r = 1:R
+    allscores(:,r) = CP_replicability(XT0,r);
+end
+plot_allscores(allscores)
+
             
 %% Example showing how to check the results, e.g., looking at subject scores, t-test, correation with variables of interest
 S      = Fac_cp.U{1}; % Subject scores
