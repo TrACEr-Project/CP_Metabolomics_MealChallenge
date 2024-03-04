@@ -62,12 +62,12 @@ for i=1:nb_starts
     f(i) = out{i}.f;
 end
 [ff, index] = sort(f,'ascend');
+Fac_cp = Fac{index(1)};
+out_cp = out{index(1)};
 if out{index(1)}.ExitFlag==3 || out{index(1)}.ExitFlag==0 % algorithm stops due to relative change in function value or the gradient condition
-    flag_stop = 1;
-    Fac_cp = Fac{index(1)};
-    out_cp = out{index(1)};
-else 
-    flag_stop = 0;
+   flag_stop = 1;
+else
+   flag_stop = 0;
 end
 
 

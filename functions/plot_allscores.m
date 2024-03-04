@@ -1,6 +1,6 @@
 function plot_allscores(allscores)
 
-figure
+
 boxplot(allscores); ylabel('FMS'); xlabel('Number of Components')
 set(gca,'XTick', 1:1:4, 'XTickLabel',{'$R=1$', '$R=2$','$R=3$', '$R=4$'},'TickLabelInterpreter','latex')
 index= round(450*0.95);
