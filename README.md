@@ -11,4 +11,4 @@ While the data we have used is not available publicly, the same pipeline can be 
 -  S. Yan, L. Li, D. Horner, P. Ebrahimi, B. Chawes, L. O. Dragsted, M. A. Rasmussen, A. K. Smilde,  E. Acar. Characterizing human postprandial metabolic response using multiway data analysis, 2023
 https://doi.org/10.1101/2023.08.31.555521
 
-  
+**Original repository:** https://github.com/eacarat/CP_Metabolomics_MealChallenge
